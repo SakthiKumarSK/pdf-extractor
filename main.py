@@ -1,7 +1,6 @@
 !pip install pypdf
 from pypdf import PdfReader
 
-
 import spacy
 
 # Load spaCy model
@@ -27,6 +26,7 @@ print(f"Statements by {target_speakers}:")
 target_text = []
 capture = False
 
+## to find keyword
 for line in merged_pdf_text.splitlines():
     line = line.strip()
     # Check if the line starts with the target speaker's name
